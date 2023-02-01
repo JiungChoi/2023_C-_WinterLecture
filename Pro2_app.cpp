@@ -1,14 +1,20 @@
-#include<iostream>
-#include"square.h"
-using namespace std;
-
+/*****************************************************
+ * The application file to test the attributes of a  *
+ * square and a cube                                 *
+  *****************************************************/
+#include "cube.h"
 
 int main()
 {
-    // 계좌 3개 생성
-    Square sq1(20);
- 
-    cout << "sq1 Peri, Area:" << sq1.getPeri() << "," << sq1.getArea() << endl;
-    
-    return 0;
+	// Instantiation of a square
+	cout << "Instantiation of a square " << endl;
+	Square square(5);
+	square.print();
+	cout << endl;
+	// Instantiation of a cube
+	cout << "Instantiation of a cube: " << endl;
+	Cube cube(5);
+	cube.print();
+	cout << endl;
+	return 0;
 }
